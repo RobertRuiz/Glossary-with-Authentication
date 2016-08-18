@@ -2,8 +2,22 @@
 
 <h2>The Iron Yard's own Glossary of Front and Back End Engineering terms</h2>
 
-<h2>The most recent 5 terms added are:</h2>
-<% @terms.each do |term| %>
-  <a href="/terms/<%= term.id %>"><%= term.name %></a>
-  <br>
-<% end %>
+<div class="terms_table">
+  <p>
+  <h3>The most recent 5 terms added are:</h3>
+  <% @terms.each do |term| %>
+    <%= link_to term.name, term_path(term) %></a>
+    <br>
+  <% end %>
+  </p>
+</div>
+
+<div class="categories_table">
+  <p>
+  <h3>The current categories are:</h3>
+  <% @categories.each do |category| %>
+    <%= link_to category.name, category_path(category) %></a>
+    <br>
+  <% end %>
+  </p>
+</div>
