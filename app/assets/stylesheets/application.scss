@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   background-image: image-url("iron.jpg");
+   background-size: cover;
+ }
+
+ header {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .first_5 {
+   margin-left: 2em;
+ }
