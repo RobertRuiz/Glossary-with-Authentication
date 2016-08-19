@@ -14,15 +14,36 @@
  *= require_self
  */
  body {
-   background-image: image-url("iron.jpg");
-   background-size: cover;
+  background-image: image-url("iron.jpg");
+  background-size: cover;
+  color: white;
  }
 
  header {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  input {
+    padding: 0;
+    line-height: 22px;
+    vertical-align: middle;
+   }
+
+   input [type=text] {
+    background-color: transparent;
+    color: white;
+    border: none;
+   }
+
  }
 
- .first_5 {
-   margin-left: 2em;
+ .last_5 {
+  margin-left: 2em;
+ }
+
+ .right_navigation
+ {
+   display: flex;
+   align-items: flex-start;
  }

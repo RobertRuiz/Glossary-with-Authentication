@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :session
   get 'welcome/index'
 
+  # root + 'name of controller= welcome #name of the action'
   root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
