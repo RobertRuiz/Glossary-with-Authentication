@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
+<%= link_to 'Add a new term', new_term_path, class: "btn btn-default" %>
+<br>
 
 <h1>Terms</h1>
 
-<table>
+<table class="table table-bordered table-hover table-condensed table-responsive  ">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,6 +18,11 @@
 
   <tbody>
     <% @terms.each do |term| %>
+    <% if term.name.blank? %>
+      <tr class="danger ">
+    <% else %>
+      <tr>
+    <% end %>
       <tr>
         <td><%= term.name %></td>
         <td><%= term.definition %></td>
@@ -31,5 +38,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Term', new_term_path %>

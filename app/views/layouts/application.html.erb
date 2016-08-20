@@ -9,14 +9,14 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-6">
           <h1>  <%= link_to image_tag('/assets/logo.png'), root_path %></h1>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6">
         <% if logged_in? %>
-          Logged in: <%= current_user.email %> | <%= link_to 'Logout', logout_path %>
+          Logged in as: <%= current_user.name %> | <%= link_to 'Logout', logout_path %>
         <% else %>
           <%= link_to 'Login', login_path %> | <%= link_to 'Signup', signup_path %>
         <% end %>

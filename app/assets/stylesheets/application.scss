@@ -21,6 +21,7 @@
   background-image: image-url("iron.jpg");
   background-size: cover;
   color: white;
+  background-color: black;
  }
 
  header {
@@ -35,8 +36,8 @@
    }
 
    input [type=text] {
-    background-color: transparent;
-    color: white;
+    background-color: black;
+    color: blue;
     border: none;
    }
 
@@ -51,3 +52,7 @@
    display: flex;
    align-items: flex-start;
  }
+
+.categories_table {
+ margin-left: 2em;
+}

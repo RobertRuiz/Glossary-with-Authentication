@@ -6,27 +6,37 @@
   Front and Back end Engineering terms</h2>
 
 <% if logged_in? %>
-  <div class="last_5">
+    <div class="last_5">
+      <br>
+      <p>
+      <h3>The most recent 5 terms added are:</h3>
+      <table class="table">
+      <% @terms.each do |term| %>
+        <%= link_to term.name, term_path(term) %></a>
+        <br>
+      <% end %>
+      </table>
+      </p>
+
+
+      <p>
+        <%= link_to 'Add a new term', new_term_path %>
+          <br>
+        <%= link_to 'See all existing terms', terms_path %>
+      </p>
     <br>
+    </div>
     <p>
-    <h3>The most recent 5 terms added are:</h3>
-    <% @terms.each do |term| %>
-      <%= link_to term.name, term_path(term) %></a>
+    <div class="categories_table">
+      <h3>The current categories are:</h3>
+      <% @categories.each do |category| %>
+        <%= link_to category.name, category_path(category) %></a>
+        <br>
+      <% end %>
       <br>
-    <% end %>
+      <%= link_to 'Add a new category', new_category_path %>
     </p>
-  <br>
-  <% link_to 'Add a new term', new_term_path %>
-  <% link_to 'See all existing terms', terms_path %>
-  <br>
-  </div>
-  <div class="categories_table">
-    <p>
-    <h3>The current categories are:</h3>
-    <% @categories.each do |category| %>
-      <%= link_to category.name, category_path(category) %></a>
-      <br>
-    <% end %>
-    </p>
-  </div>
+    <br>
+    </div>
+
 <% end %>
