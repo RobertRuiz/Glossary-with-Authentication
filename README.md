@@ -1,15 +1,13 @@
-# README
+Hello and welcome
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps necessary to get the application up and running:
 
-Things you may want to cover:
+* Ruby version - ruby 2.3.1p112 (2016-04-26 revision 54768)
 
-* Ruby version
+* System dependencies - Bundler will handle gem dependency resolution
+ instructions for installing Bundler on Rails 2.3 are here: http://gembundler.com/rails23.html
 
-* System dependencies
-
-* Configuration
+* Configuration, please visit : https://goo.gl/tGEAlz
 
 * Database creation
 

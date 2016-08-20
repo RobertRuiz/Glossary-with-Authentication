@@ -1,8 +1,8 @@
-Category.create(name: "Javascript",
-                subject: "Front End Engineering")
+Category.create(name: "Front End Engineering",
+                subject: "Javascript")
 
-Category.create(name: "Ruby",
-                subject: "Back End Engineering")
+Category.create(name: "Back End Engineering",
+                subject: "Ruby")
 
 Term.create(name: "Active record",
             definition: "an ORM for ruby",
