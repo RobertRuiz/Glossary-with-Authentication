@@ -20,9 +20,10 @@
 
 
       <p>
-        <%= link_to 'Add a new term', new_term_path %>
+        <%= link_to 'Add a new term', new_term_path, class: "btn btn-primary" %>
           <br>
-        <%= link_to 'See all existing terms', terms_path %>
+          <br>
+        <%= link_to 'See all existing terms', terms_path, class: "btn btn-primary" %>
       </p>
     <br>
     </div>
@@ -34,7 +35,7 @@
         <br>
       <% end %>
       <br>
-      <%= link_to 'Add a new category', new_category_path %>
+      <%= link_to 'Add a new category', new_category_path, class: "btn btn-primary" %>
     </p>
     <br>
     </div>
